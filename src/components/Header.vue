@@ -45,6 +45,12 @@
       justify-content: space-between;
       align-items: center;
       height: 100%; 
+      ul li{
+        color: white;
+        padding: 5px;
+        font-size: 1rem;
+        font-weight: 800;
+      }
     }
   }
 
