@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/roboto": "^5.0.12",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
     "vue": "^3.4.21"
   },
   "devDependencies": {
