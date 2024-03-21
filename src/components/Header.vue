@@ -1,6 +1,35 @@
 <script>
   export default {
-    
+
+    data(){
+      return{
+          menu: [
+            {
+              title: 'Donna',
+              link: '#',
+            },
+
+            {
+              title: 'Uomo',
+              link: '#',
+            },
+
+            {
+              title: 'Bambini',
+              link: '#',
+            },
+          ]
+      }
+    },
+
+    methods: {
+
+    },
+
+    mounted(){
+
+    }
+
   }
 </script>
 
@@ -10,9 +39,7 @@
     <div class="container d-flex ">
         <nav class="menu d-flex ">
           <ul class="d-flex">
-            <li><a href="#"></a>Donna</li>
-            <li><a href="#"></a>Uomo</li>
-            <li><a href="#"></a>Bambini</li>
+            <li v-for="(item, index) in menu" :key="index"><a :href="item.link">{{ item.title }}</a></li>
           </ul>
         </nav>
 
