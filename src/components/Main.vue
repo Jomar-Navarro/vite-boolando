@@ -20,8 +20,10 @@
     <div class="container">
       <ProductCard v-for="product in products" :key="product.id"
         :productMainImage="`src/assets/img/${product.frontImage}`"
-        :productSecondImage="`src/assets/img/${product.backImage}`" :productDiscount="product.value"
-        :productBrand="product.brand" :productName="product.name" :productFullPrice="product.price" />
+        :productSecondImage="`src/assets/img/${product.backImage}`" :productDiscount="product.badges[0].value"
+        :productBrand="product.brand" :productName="product.name" :productFullPrice="product.price"
+        :productbadges="product.badges"
+        />
     </div>
   </main>
 </template>

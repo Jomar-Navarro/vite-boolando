@@ -12,6 +12,7 @@
       productBrand: String,
       productName: String,
       productFullPrice: String,
+      productbadges: Array,
     }
   }
 </script>
@@ -25,7 +26,7 @@
     <img :src="productSecondImage" :alt="productSecondImage">
     <span class="heart d-flex ">&hearts;</span>
     <span class="discount d-flex">{{ productDiscount }}</span>
-    <span class="eco d-flex">{{ productDiscount }}</span>
+    <span v-for="(badge, index) in productbadges" :key="index" class="eco d-flex">{{ badge.value }}</span>
     <p>{{ productBrand }}</p>
     <h3>{{ productName }}</h3>
     <span class="prezzo">14,99 &euro;</span>
