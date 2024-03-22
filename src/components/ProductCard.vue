@@ -11,6 +11,7 @@
       productDiscount: String,
       productBrand: String,
       productName: String,
+      productFullPrice: String,
     }
   }
 </script>
@@ -28,7 +29,7 @@
     <p>{{ productBrand }}</p>
     <h3>{{ productName }}</h3>
     <span class="prezzo">14,99 &euro;</span>
-    <span class="overline">29,99 &euro;</span>
+    <span class="overline">{{ productFullPrice }} &euro;</span>
   </div>
 
 </template>

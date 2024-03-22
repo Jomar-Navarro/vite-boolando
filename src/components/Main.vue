@@ -18,15 +18,10 @@
 <template>
   <main>
     <div class="container">
-      <ProductCard 
-      v-for="product in products" :key="product.id" 
-      :productMainImage="product.frontImage"
-      :productSecondImage="product.backImage"
-      :productDiscount="product.value"
-      :productBrand="product.brand"
-      :productName="product.name"
-      
-      />
+      <ProductCard v-for="product in products" :key="product.id"
+        :productMainImage="`src/assets/img/${product.frontImage}`"
+        :productSecondImage="`src/assets/img/${product.backImage}`" :productDiscount="product.value"
+        :productBrand="product.brand" :productName="product.name" :productFullPrice="product.price" />
     </div>
   </main>
 </template>
