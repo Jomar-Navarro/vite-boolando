@@ -1,35 +1,20 @@
 <script>
+  import { headerMenues } from '../data/menues'
   export default {
 
     data(){
       return{
-          menu: [
-            {
-              title: 'Donna',
-              link: '#',
-            },
-
-            {
-              title: 'Uomo',
-              link: '#',
-            },
-
-            {
-              title: 'Bambini',
-              link: '#',
-            },
-          ]
       }
     },
+    computed: {
+      mainMenu(){
+        return headerMenues.menu
+      },
 
-    methods: {
-
+      socialMenu(){
+        return headerMenues.social
+      }
     },
-
-    mounted(){
-
-    }
-
   }
 </script>
 
@@ -37,22 +22,23 @@
 <template>
   <header>
     <div class="container d-flex ">
-        <nav class="menu d-flex ">
-          <ul class="d-flex">
-            <li v-for="(item, index) in menu" :key="index"><a :href="item.link">{{ item.title }}</a></li>
-          </ul>
-        </nav>
+      <nav class="menu d-flex ">
+        <ul class="d-flex">
+          <li v-for="(item, index) in mainMenu" :key="`m-${index}`"><a :href="item.link">{{ item.title }}</a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="logo d-flex ">
-          <img src="/src/assets/img/boolean-logo.png" alt="logo">
-        </div>
-
-        <div class="icons">
-          <i class="fa-regular fa-user"></i>
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-bag-shopping"></i>
-        </div>
+      <div class="logo d-flex ">
+        <img src="/src/assets/img/boolean-logo.png" alt="logo">
       </div>
+
+      <div class="icons">
+        <ul>
+          <li v-for="(item, index) in socialMenu" :key="`s-${index}`" v-html="`${item.title}`"></li>
+        </ul>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -90,9 +76,14 @@
   }
 
   .icons{
-    i{
-      padding: 0px 5px;
-      color: white;
+    ul{
+      display: flex;
+      li{
+        i {
+            padding: 0px 5px;
+            color: white;
+          }
+      }
     }
   } 
   

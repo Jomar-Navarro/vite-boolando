@@ -21,11 +21,11 @@
 
       <div class="social">
         <h4>Trovaci anche su</h4>
-        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-pinterest"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
   </footer>
