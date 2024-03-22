@@ -1,5 +1,5 @@
 <script>
-  import { headerMenues } from '../data/menues'
+  import { headerMenues } from '../assets/data/menues'
   export default {
 
     data(){

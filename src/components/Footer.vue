@@ -1,5 +1,5 @@
 <script>
-import { footerMenues } from '../data/menues'
+import { footerMenues } from '../assets/data/menues'
   export default {
     computed: {
       socialMenu(){
