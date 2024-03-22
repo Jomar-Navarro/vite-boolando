@@ -2,68 +2,7 @@
   export default {
     data(){
       return{
-        cards:[
-          {
-            mainImage: '1.webp',
-            secondImage: '1b.webp',
-            discount: '-50%',
-            eco: 'Sostenibilitá',
-            title: 'Levi\'s',
-            fit: 'RELAXED FIT TEE UNISEX',
-            discPrice: '14,99',
-            fullPrice: '29,99',
-          },
-          {
-            mainImage: '2.webp',
-            secondImage: '2b.webp',
-            discount: '-30%',
-            eco: '',
-            title: 'Guess',
-            fit: 'ROSES TEE',
-            discPrice: '20,99',
-            fullPrice: '29,99',
-          },
-          {
-            mainImage: '3.webp',
-            secondImage: '3b.webp',
-            discount: '-30%',
-            eco: '',
-            title: 'Come zucchero filato',
-            fit: 'VOGLIA DI COLORI PASTELLO',
-            discPrice: '129,99',
-            fullPrice: '184,99',
-          },
-          {
-            mainImage: '4.webp',
-            secondImage: '4b.webp',
-            discount: '-50%',
-            eco: 'Sostenibilitá',
-            title: 'Levi\'s',
-            fit: 'TEE UNISEX',
-            discPrice: '14,99',
-            fullPrice: '29,99',
-          },
-          {
-            mainImage: '5.webp',
-            secondImage: '5b.webp',
-            discount: '-50%',
-            eco: 'Sostenibilitá',
-            title: 'Maya Deluxe',
-            fit: 'STRIPE BODICE',
-            discPrice: '',
-            fullPrice: '99,99',
-          },
-          {
-            mainImage: '6.webp',
-            secondImage: '6b.webp',
-            discount: '-50%',
-            eco: 'Sostenibilitá',
-            title: 'Esprit',
-            fit: 'MAGLIONE - BLACK',
-            discPrice: '',
-            fullPrice: '29,99',
-          }
-        ]
+        
       }
     }
   }
