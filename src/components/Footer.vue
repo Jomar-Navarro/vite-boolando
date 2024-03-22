@@ -1,6 +1,11 @@
 <script>
+import { footerMenues } from '../data/menues'
   export default {
-    
+    computed: {
+      socialMenu(){
+        return footerMenues.social
+      }
+    }
   }
 </script>
 
@@ -21,11 +26,9 @@
 
       <div class="social">
         <h4>Trovaci anche su</h4>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <ul>
+          <li><a v-for="(item, index) in socialMenu" :key="`s-${index}`" :href="`${item.link}`" v-html="`${item.title}`"></a></li>
+        </ul>
       </div>
     </div>
   </footer>
@@ -56,15 +59,21 @@
   }
 
   .social{
-    a{
-      color:white;
+    ul{
+      li{
+        a{
+          color:white;
+          padding: 0 5px;
+          i{
+            font-size: large;
+            line-height: 40px;
+          }
+        }
+      }
     }
+    
 
-    i{
-      padding-right: 5px;
-      font-size: large;
-      line-height: 40px;
-    }
+    
   }
 
 </style>

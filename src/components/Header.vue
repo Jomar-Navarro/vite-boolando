@@ -8,11 +8,11 @@
     },
     computed: {
       mainMenu(){
-        return headerMenues.menu
+        return headerMenues.menu;
       },
 
       socialMenu(){
-        return headerMenues.social
+        return headerMenues.social;
       }
     },
   }
