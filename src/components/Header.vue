@@ -84,9 +84,16 @@
   .container{
     .logo{
       img{
-        width: 150px;
         height: 40px;
       }
     } 
   }
+
+  .icons{
+    i{
+      padding: 0px 5px;
+      color: white;
+    }
+  } 
+  
 </style>
